@@ -6,7 +6,7 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) ([open the project](https://halflife.hackclub.com/projects/cmuxyhz9d01kt01ngwuw1x8lo)). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> A starbie but with additional functionalites.
+> Super Starbie is a small, interactive AI-powered desktop companion shaped like a star. It can display useful information, monitor temperature and humidity, respond to button presses, and react to movement.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
