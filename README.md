@@ -23,7 +23,9 @@ Super Starbie is a small, interactive desktop pet. Its a Starbie but with custom
 
 
 ## PCB & Components
-<img width="1575" height="817" alt="image" src="https://github.com/user-attachments/assets/6c24d801-2969-4975-ae65-24e9b4b7be40" />
+<img width="1568" height="817" alt="image" src="https://github.com/user-attachments/assets/93195ba7-af0c-445d-a2e5-b84268d45dec" />
+
 
 ## 3D Image
-<img width="1675" height="895" alt="image" src="https://github.com/user-attachments/assets/3afb2658-e362-4f1f-976e-39169f2c782c" />
+<img width="1675" height="895" alt="image" src="https://github.com/user-attachments/assets/f3c1b6c9-c265-441c-88cb-a38c7df77444" />
+
