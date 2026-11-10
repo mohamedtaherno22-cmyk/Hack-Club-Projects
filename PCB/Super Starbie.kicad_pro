@@ -679,7 +679,7 @@
         "uuid": "68be8684-c62e-4513-94ab-4215416c2db7"
       }
     ],
-    "used_designators": "U1-3,DS1,M1,D1-7,SH1107\\-OLED\\-Screen1,R1-11,SW1-6,Q1,Power_ON/OFF1",
+    "used_designators": "U1-4,DS1,M1,M3,D1-7,SH1107\\-OLED\\-Screen1,R1-11,SW1-10,Q1,Power_ON/OFF1,#PWR4,#PWR16-29,J1,J5-6",
     "variants": []
   },
   "sheets": [

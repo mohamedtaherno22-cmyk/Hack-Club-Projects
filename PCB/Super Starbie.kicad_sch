@@ -2176,7 +2176,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_NMOS_DGS"
+		(symbol "Transistor_BJT:2N2219"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2197,7 +2197,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NMOS_DGS"
+			(property "Value" "2N2219"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2208,8 +2208,21 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-39-3"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2217,9 +2230,10 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Description" "800mA Ic, 50V Vce, NPN Transistor, TO-39"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2230,7 +2244,7 @@
 					)
 				)
 			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
+			(property "Sim.Device" "NPN"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2241,7 +2255,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+			(property "Sim.Pins" "1=E 2=B 3=C"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2252,22 +2266,32 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_DGS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
+			)
+			(property "ki_fp_filters" "TO?39*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2N2219_0_1"
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -2279,81 +2303,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -2361,57 +2314,10 @@
 					)
 				)
 				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2419,11 +2325,47 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_DGS_1_1"
+			(symbol "2N2219_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2441,7 +2383,7 @@
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "G"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2457,9 +2399,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2732,327 +2674,377 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 671.83 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c783cbd-2684-4837-9cdc-b614d13f6f1f")
+	(rectangle
+		(start 573.532 190.754)
+		(end 618.49 252.222)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "16ae2146-29a0-4853-b67e-25322858e96e")
+	)
+	(rectangle
+		(start 663.194 190.754)
+		(end 699.516 252.222)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "36caa0cc-2e3a-4b5d-8930-ffad292bc8ca")
+	)
+	(rectangle
+		(start 541.02 211.582)
+		(end 573.532 252.222)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4c6deb9b-3755-406e-a077-55d990b192c2")
+	)
+	(rectangle
+		(start 618.49 212.852)
+		(end 663.194 252.222)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c09a84ad-4989-434a-abf6-68828306b9e1")
+	)
+	(rectangle
+		(start 618.49 190.754)
+		(end 663.194 212.852)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d1f83065-398c-42bb-b123-c129739f1657")
+	)
+	(rectangle
+		(start 541.02 190.754)
+		(end 573.532 252.222)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ecd6e20f-c55a-44ed-a59a-98f43c2bf25f")
+	)
+	(text "switches"
+		(exclude_from_sim no)
+		(at 568.96 250.952 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3f07b142-07d5-4a5a-b4d7-7791bf018aa0")
+	)
+	(text "DHT11 Sensor Circuit"
+		(exclude_from_sim no)
+		(at 673.608 192.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c4b81946-571c-4137-90bb-66a302059f1b")
+	)
+	(text "OLED SCREEN\n"
+		(exclude_from_sim no)
+		(at 625.348 192.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d5a4bd8b-63ed-45f2-88a7-a72b22eeda9d")
+	)
+	(text "Vibrating Disk Motor Circuit"
+		(exclude_from_sim no)
+		(at 649.224 251.206 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f79f3b43-8120-41e3-a3c9-dd38555daa5b")
 	)
 	(junction
-		(at 704.85 106.68)
+		(at 683.26 226.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "52611943-29fc-4837-97a6-df61081f5e10")
+		(uuid "0aba0982-1efa-4f9d-b494-d18e1c458128")
 	)
 	(junction
-		(at 697.23 137.16)
+		(at 641.35 219.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a6de74f-522f-4e84-ae95-51004fe7c480")
+		(uuid "9f86f6e0-6d70-4a2d-baca-9e240364d343")
 	)
 	(junction
-		(at 704.85 119.38)
+		(at 641.35 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b74b940e-ef6f-4a4a-9d97-8d45bafb7f33")
+		(uuid "a610bb76-a956-41db-8a80-67d747c18214")
 	)
 	(junction
-		(at 704.85 148.59)
+		(at 675.64 218.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f553eed9-0eef-4579-a03a-da05fd562ee3")
-	)
-	(junction
-		(at 684.53 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f63bf0a4-5147-4d89-bf00-d7130a022af4")
+		(uuid "b2054d54-b70b-4b93-8fb3-4745f3ef33ec")
 	)
 	(no_connect
-		(at 661.67 127)
-		(uuid "05b91d11-9ee9-4299-9a19-5bdc489b07af")
+		(at 581.66 207.01)
+		(uuid "00e2e50a-1be2-438d-9780-74d0dd6ffa0c")
 	)
 	(no_connect
-		(at 633.73 132.08)
-		(uuid "12325980-2b98-43c4-8c24-b73145e74d02")
+		(at 609.6 204.47)
+		(uuid "05c7282c-f756-4232-8314-be513acb3699")
 	)
 	(no_connect
-		(at 633.73 129.54)
-		(uuid "19950ec1-9a2e-48d3-b28b-f545e17adacc")
+		(at 581.66 204.47)
+		(uuid "12388b3b-f987-4c11-8fcd-d96749700fd8")
 	)
 	(no_connect
-		(at 661.67 137.16)
-		(uuid "221bde4a-0c55-4f8e-a28a-f794fee20812")
+		(at 609.6 212.09)
+		(uuid "197aa673-bd89-4877-8b15-5837ba69d343")
 	)
 	(no_connect
-		(at 633.73 127)
-		(uuid "258b0a69-2d90-4ae9-b6ba-40ba5d2cde52")
+		(at 609.6 237.49)
+		(uuid "1b3a4c4f-128c-4da9-9b40-7b967a2281f5")
 	)
 	(no_connect
-		(at 633.73 124.46)
-		(uuid "3aa03a75-eacb-4899-907f-7308481cc712")
+		(at 581.66 219.71)
+		(uuid "3241f181-4a89-4617-bcb5-d650f013671c")
 	)
 	(no_connect
-		(at 661.67 134.62)
-		(uuid "4ab4d553-f123-4abb-8ae5-a4d4b9ea511c")
+		(at 609.6 222.25)
+		(uuid "49e44b01-8b47-48d8-8807-4c381be1674d")
 	)
 	(no_connect
-		(at 633.73 134.62)
-		(uuid "51082b3f-ed0a-4568-8afb-bc273b770ba9")
+		(at 581.66 217.17)
+		(uuid "54494f1a-6b68-4d82-af2c-92bad086f0a9")
 	)
 	(no_connect
-		(at 633.73 157.48)
-		(uuid "5457885f-1511-402d-ad5b-4290f5bbf281")
+		(at 609.6 217.17)
+		(uuid "573e991e-e577-475c-8eb4-77d276151412")
 	)
 	(no_connect
-		(at 679.45 133.35)
+		(at 568.96 201.93)
 		(uuid "63b9d009-5ad6-42e8-acc4-6fd5fbcc3185")
 	)
 	(no_connect
-		(at 661.67 121.92)
-		(uuid "6af1ca67-8e32-4b95-8a26-a20d9b0c7e09")
+		(at 609.6 234.95)
+		(uuid "71f1df05-51f5-4bbe-8633-2009410727b0")
 	)
 	(no_connect
-		(at 679.45 125.73)
+		(at 609.6 224.79)
+		(uuid "789c4141-09fb-4527-b61d-73ede98f0b38")
+	)
+	(no_connect
+		(at 609.6 209.55)
+		(uuid "8a293188-5b60-43fe-ae73-d299b63fd649")
+	)
+	(no_connect
+		(at 561.34 201.93)
 		(uuid "8a71c414-30ad-4011-8d98-e287452ad661")
 	)
 	(no_connect
-		(at 661.67 129.54)
-		(uuid "8c8b2b8d-70f0-4987-8999-640ced6d0275")
+		(at 581.66 240.03)
+		(uuid "8cb41a6c-6b0e-45a8-97c9-aa276d52e2b6")
 	)
 	(no_connect
-		(at 661.67 142.24)
-		(uuid "a3bf9847-c810-4324-89e6-20375d947d38")
+		(at 581.66 232.41)
+		(uuid "8cbaa898-9868-4ef3-aa4b-5a0239b169d8")
 	)
 	(no_connect
-		(at 661.67 154.94)
-		(uuid "a9b3a53f-bc99-486f-aaf6-dbf97e9b1275")
+		(at 581.66 214.63)
+		(uuid "a49c094c-c5b9-4c9a-8f6d-a8826198a45c")
 	)
 	(no_connect
-		(at 679.45 130.81)
+		(at 566.42 201.93)
 		(uuid "ae525c2e-78e0-42fe-8333-499e0b55129d")
 	)
 	(no_connect
-		(at 661.67 152.4)
-		(uuid "afe2d9bf-f86a-48bf-9396-d70dca549fcb")
-	)
-	(no_connect
-		(at 679.45 128.27)
+		(at 563.88 201.93)
 		(uuid "b1d352dd-e5fe-483d-8ae9-7dd25855a5e9")
 	)
 	(no_connect
-		(at 633.73 121.92)
-		(uuid "b31bd76c-9d51-4223-8f06-72b9d96d83a3")
+		(at 609.6 219.71)
+		(uuid "b4b3a98c-8b72-4069-aeb3-5d773ef09ee3")
 	)
 	(no_connect
-		(at 633.73 137.16)
-		(uuid "b8d898b8-6cab-4e67-989a-c3f8b84c9c44")
+		(at 581.66 212.09)
+		(uuid "eadead55-5f45-428e-a870-d997ba2f4cc8")
 	)
 	(no_connect
-		(at 633.73 149.86)
-		(uuid "bcc7d57a-d072-4662-b19f-761ced32fd74")
+		(at 581.66 209.55)
+		(uuid "efdaadee-f8be-4c43-bf84-b95854145af3")
 	)
 	(no_connect
-		(at 661.67 149.86)
-		(uuid "d9e73e66-54bb-4369-8f59-0e96d8ffd603")
-	)
-	(no_connect
-		(at 661.67 139.7)
-		(uuid "ea688202-f6e9-4e0e-9aa6-62c0bb097dd2")
+		(at 609.6 232.41)
+		(uuid "f3798074-d98b-43ed-92c0-aa433a94c70f")
 	)
 	(wire
 		(pts
-			(xy 704.85 142.24) (xy 704.85 148.59)
+			(xy 579.12 227.33) (xy 581.66 227.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0cfc849e-8a4b-4b8c-9657-6a53c9c5d7c6")
+		(uuid "15993936-0a9b-40d6-8e8a-ea137222a53f")
 	)
 	(wire
 		(pts
-			(xy 661.67 124.46) (xy 664.21 124.46)
+			(xy 563.88 214.63) (xy 561.34 214.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e0255ad-39e4-40ed-9d0c-81fb8d45d3ce")
+		(uuid "1f36db2f-7da1-49ba-8bbe-24ee7fb12fce")
 	)
 	(wire
 		(pts
-			(xy 685.8 101.6) (xy 679.45 101.6)
+			(xy 553.72 198.12) (xy 553.72 201.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10348afb-23bb-452c-9fea-abe6b19865a9")
+		(uuid "22d3700c-b577-4220-b09b-0e33566127c7")
 	)
 	(wire
 		(pts
-			(xy 622.3 142.24) (xy 633.73 142.24)
+			(xy 657.86 229.87) (xy 657.86 232.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1228fc38-65a7-4136-991d-d4fc1e7067f4")
+		(uuid "3381db57-2d8a-45b3-9e61-5f0022b79988")
 	)
 	(wire
 		(pts
-			(xy 671.83 157.48) (xy 676.91 157.48)
+			(xy 563.88 222.25) (xy 561.34 222.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c0b5bf0-ecba-4085-a3f1-d71313757e49")
+		(uuid "4780924e-e9fd-46b6-b69e-0a6dd946ed94")
 	)
 	(wire
 		(pts
-			(xy 624.84 139.7) (xy 633.73 139.7)
+			(xy 657.86 219.71) (xy 657.86 222.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1cde8762-3953-4456-a264-0b7b7a45d495")
+		(uuid "51b796bd-287a-4788-998a-47f50f027cec")
 	)
 	(wire
 		(pts
-			(xy 628.65 147.32) (xy 633.73 152.4)
+			(xy 579.12 234.95) (xy 581.66 234.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2558896e-8eaa-4349-b172-8b2b4ef65735")
+		(uuid "52cc3385-81bd-495f-adb0-d4901236074e")
 	)
 	(wire
 		(pts
-			(xy 619.76 134.62) (xy 619.76 144.78)
+			(xy 563.88 237.49) (xy 561.34 237.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b251a70-2ac4-40bd-aece-6b955b0d1511")
+		(uuid "5fc1b73c-981d-4b13-8bc4-33a88f85e1d4")
 	)
 	(wire
 		(pts
-			(xy 730.25 116.84) (xy 730.25 119.38)
+			(xy 624.84 240.03) (xy 626.11 240.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ed699ce-96e4-42ef-8cc5-b1f73b058d91")
+		(uuid "6431fbb6-737c-436d-85e3-a8d1ad0f6887")
 	)
 	(wire
 		(pts
-			(xy 697.23 148.59) (xy 704.85 148.59)
+			(xy 641.35 232.41) (xy 641.35 234.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "501c5f25-0b00-4350-9028-c6e98639ab5f")
+		(uuid "685dfebc-103c-45a6-afd5-5a591d693c7a")
 	)
 	(wire
 		(pts
-			(xy 704.85 119.38) (xy 730.25 119.38)
+			(xy 579.12 224.79) (xy 581.66 224.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52c75489-7352-4ebb-8988-44801d32c2a7")
+		(uuid "685fdc72-4b98-47ca-9115-444404a50f04")
 	)
 	(wire
 		(pts
-			(xy 622.3 152.4) (xy 622.3 160.02)
+			(xy 549.91 198.12) (xy 553.72 198.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "597972fb-3763-4c38-aaf2-51fb65b7134d")
+		(uuid "711c30b7-322a-46f7-928f-ffdd5e293db1")
 	)
 	(wire
 		(pts
-			(xy 704.85 119.38) (xy 704.85 132.08)
+			(xy 609.6 227.33) (xy 610.87 227.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5da882b7-5ace-480a-8a66-aaa9896e90b3")
+		(uuid "722af569-bcb2-40f0-a88f-26a9cb830423")
 	)
 	(wire
 		(pts
-			(xy 730.25 106.68) (xy 730.25 109.22)
+			(xy 563.88 245.11) (xy 561.34 245.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "673c16d3-1f8f-4a2b-9d77-d6e5489e47f2")
+		(uuid "73f169cb-0802-4e8d-bb5b-ac5e4bd151cd")
 	)
 	(wire
 		(pts
-			(xy 680.72 96.52) (xy 679.45 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d28b846-1956-46a1-b7f5-39da6c961256")
-	)
-	(wire
-		(pts
-			(xy 622.3 152.4) (xy 627.38 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f22a6ca-0278-4a87-9bf1-36d6a06092aa")
-	)
-	(wire
-		(pts
-			(xy 679.45 165.1) (xy 684.53 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7207ae2a-4c2c-444c-9dcd-db6933042f26")
-	)
-	(wire
-		(pts
-			(xy 668.02 137.16) (xy 668.02 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74cc3629-0c2a-43d9-98ea-dce5a615fda6")
-	)
-	(wire
-		(pts
-			(xy 619.76 109.22) (xy 624.84 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77949bec-70a6-4af7-96c0-5be85b8ccc5b")
-	)
-	(wire
-		(pts
-			(xy 680.72 120.65) (xy 679.45 120.65)
+			(xy 556.26 200.66) (xy 556.26 201.93)
 		)
 		(stroke
 			(width 0)
@@ -3062,47 +3054,47 @@
 	)
 	(wire
 		(pts
-			(xy 697.23 137.16) (xy 697.23 140.97)
+			(xy 609.6 214.63) (xy 612.14 214.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ab84de1-f33c-40f0-bc12-d859cecd3d36")
+		(uuid "82e87f36-8e2b-4143-ba10-b440e0c574cf")
 	)
 	(wire
 		(pts
-			(xy 661.67 132.08) (xy 664.21 132.08)
+			(xy 675.64 226.06) (xy 683.26 226.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8fe142ef-ab53-49e0-81ab-5839bb26e3c4")
+		(uuid "8c5d7d9a-d93b-43d8-9d15-c0fbec3303b1")
 	)
 	(wire
 		(pts
-			(xy 671.83 147.32) (xy 661.67 147.32)
+			(xy 563.88 229.87) (xy 561.34 229.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "91b42cfe-3983-497b-ae73-baa8a2789d3f")
+		(uuid "8cb9bbf2-9ada-4645-93ea-c4a4db417c9e")
 	)
 	(wire
 		(pts
-			(xy 661.67 144.78) (xy 668.02 144.78)
+			(xy 609.6 207.01) (xy 612.14 207.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "934a59e2-7305-4899-ae37-f975c59b9344")
+		(uuid "96798460-3775-4534-9d82-96762542db9b")
 	)
 	(wire
 		(pts
-			(xy 680.72 123.19) (xy 679.45 123.19)
+			(xy 558.8 200.66) (xy 558.8 201.93)
 		)
 		(stroke
 			(width 0)
@@ -3112,196 +3104,276 @@
 	)
 	(wire
 		(pts
-			(xy 632.46 147.32) (xy 633.73 147.32)
+			(xy 642.62 205.74) (xy 641.35 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99aa60e3-ba68-4ee2-9f8d-b10a52ebb7dc")
+		(uuid "99ff71a8-1cca-4e5a-a83b-6c6eb753e451")
 	)
 	(wire
 		(pts
-			(xy 619.76 160.02) (xy 622.3 160.02)
+			(xy 609.6 229.87) (xy 610.87 229.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d7387e1-f194-4722-a7fe-f54c5b4de0d7")
+		(uuid "9e01a0ce-9955-4433-9d00-2141ca156e49")
 	)
 	(wire
 		(pts
-			(xy 619.76 144.78) (xy 633.73 144.78)
+			(xy 642.62 198.12) (xy 641.35 198.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "afef2743-b592-475a-9456-ff39aec7314a")
+		(uuid "9ebd3d42-a72d-4e9e-92d7-1b975d6afc4b")
 	)
 	(wire
 		(pts
-			(xy 619.76 121.92) (xy 622.3 121.92)
+			(xy 579.12 229.87) (xy 581.66 229.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7880017-4d6a-450a-a6ef-d277f1160cec")
+		(uuid "9eeaff56-b016-408c-893c-a54769cd2ce5")
 	)
 	(wire
 		(pts
-			(xy 668.02 137.16) (xy 697.23 137.16)
+			(xy 673.1 218.44) (xy 675.64 218.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b90f185b-4407-4a08-8375-aede4dc478f5")
+		(uuid "bab40b4e-8ca4-4924-a4a5-703092bef2fc")
 	)
 	(wire
 		(pts
-			(xy 671.83 157.48) (xy 671.83 147.32)
+			(xy 641.35 232.41) (xy 657.86 232.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c2ba0cae-5dac-4352-a061-3c8ac2c52007")
+		(uuid "bf9ea590-f76a-424e-bfb6-be072d9cfff6")
 	)
 	(wire
 		(pts
-			(xy 704.85 106.68) (xy 730.25 106.68)
+			(xy 551.18 200.66) (xy 551.18 201.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4b5b011-b578-4935-b9de-01eb539a520d")
+		(uuid "c7b2cdda-cb0b-4a50-8b12-5c9ebc561bb6")
 	)
 	(wire
 		(pts
-			(xy 671.83 157.48) (xy 671.83 165.1)
+			(xy 579.12 222.25) (xy 581.66 222.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca46b897-d72d-4bad-94d3-d77733e64400")
+		(uuid "ce07f967-1d1e-4c73-907d-7bb77b35584c")
 	)
 	(wire
 		(pts
-			(xy 680.72 104.14) (xy 679.45 104.14)
+			(xy 647.7 203.2) (xy 641.35 203.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d00367a0-4310-4c27-bcfb-2d9638fe3e24")
+		(uuid "dd8ed202-c870-4027-ba4c-7ade34a38fab")
 	)
 	(wire
 		(pts
-			(xy 683.26 118.11) (xy 679.45 118.11)
+			(xy 641.35 219.71) (xy 657.86 219.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0c53de7-3c47-49ab-b9b5-fd236bc494a2")
+		(uuid "dfc0dcbf-598a-4164-a795-4c649ceb49f6")
 	)
 	(wire
 		(pts
-			(xy 680.72 99.06) (xy 679.45 99.06)
+			(xy 609.6 240.03) (xy 609.6 242.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9c384f8-8ed8-4e7f-98cb-e840840f6edb")
+		(uuid "e4e4ef86-6835-4537-b878-3a7cd2177920")
 	)
 	(wire
 		(pts
-			(xy 619.76 147.32) (xy 628.65 147.32)
+			(xy 642.62 200.66) (xy 641.35 200.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e06cddde-3460-4c65-a262-6fe4f0548b9d")
+		(uuid "e6b7e0c1-fcce-4819-b501-d9c04d5dab3b")
 	)
-	(wire
-		(pts
-			(xy 632.46 147.32) (xy 627.38 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4765f2d-1caa-45af-9c1a-b44d3a087655")
-	)
-	(wire
-		(pts
-			(xy 622.3 121.92) (xy 622.3 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8ce9fb0-2a3f-4a12-a3ec-3df02905ad7e")
-	)
-	(wire
-		(pts
-			(xy 624.84 109.22) (xy 624.84 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1f36ebe-7913-4f22-bf67-279a6250f07a")
-	)
-	(label "SCL"
-		(at 664.21 124.46 0)
+	(label "Motor"
+		(at 610.87 229.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1536aad3-0582-4f11-b42e-77dd6706473c")
+		(uuid "14f4bfb2-58e0-4f80-af74-e350a1f83c1a")
 	)
-	(label "SCL"
-		(at 680.72 99.06 0)
+	(label "DHT11"
+		(at 673.1 218.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "150c695b-682f-4c41-9fa3-5ad0f2bac5ff")
+	)
+	(label "SW4"
+		(at 563.88 222.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "17f67f6e-765b-4774-91e3-2751527f66f6")
+		(uuid "30bc0d8b-daef-4929-b465-f1bea4c5704b")
+	)
+	(label "SW5"
+		(at 579.12 222.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "38fe6017-1767-4b11-9f9f-e92dfdf07952")
+	)
+	(label "Motor"
+		(at 624.84 240.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c825259-40f7-434d-b340-9f3c58f3a610")
+	)
+	(label "SW5"
+		(at 563.88 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4aa99d74-a8eb-4fc4-99b9-c9843fca5342")
+	)
+	(label "SW4"
+		(at 579.12 224.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4fefd3cc-00f5-455a-b5e8-bc0ae97c32b2")
+	)
+	(label "SW3"
+		(at 563.88 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5612ee3a-4ec6-446f-b564-62bce6ff3d48")
+	)
+	(label "SW3"
+		(at 579.12 227.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "760636f4-0e2c-4cca-bb32-da9facaae3e5")
+	)
+	(label "SW2"
+		(at 563.88 237.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b74559a-d7b2-4aa9-8ebf-7b937f1438df")
 	)
 	(label "SDA"
-		(at 680.72 96.52 0)
+		(at 642.62 198.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "44e8adc5-aca5-460b-87d1-91ce12fa7d4d")
+		(uuid "84253218-a53f-4341-9f7e-be64366bf796")
+	)
+	(label "SW1"
+		(at 579.12 234.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c238e6d-4bb1-4fba-a251-7f7670a1cffd")
 	)
 	(label "SDA"
-		(at 664.21 132.08 0)
+		(at 612.14 214.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "9d53bd89-3690-4ea8-a129-4ac33e4acb6d")
+		(uuid "a4cea313-0838-4a56-a918-0c379c721175")
+	)
+	(label "DHT11"
+		(at 610.87 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7838eb2-7c3e-4286-a1c3-c84393dbb14d")
 	)
 	(label "SCL"
-		(at 680.72 120.65 0)
+		(at 612.14 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8f3c641-193f-4314-92f4-b8ec6f7e4a0f")
+	)
+	(label "SCL"
+		(at 556.26 200.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3311,7 +3383,7 @@
 		(uuid "c9fb8189-9e01-498b-9586-554c3ae90d82")
 	)
 	(label "SDA"
-		(at 680.72 123.19 0)
+		(at 558.8 200.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3320,9 +3392,39 @@
 		)
 		(uuid "cc14a27c-b7fc-4183-9fde-2b07b9d244b9")
 	)
+	(label "SW2"
+		(at 579.12 229.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e041504e-8b17-47f5-8e59-fe0e1f0e8b11")
+	)
+	(label "SW1"
+		(at 563.88 245.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb6bee8d-5d2b-4d29-8e7f-62ad6f6cc1dc")
+	)
+	(label "SCL"
+		(at 642.62 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9ed8022-dca8-4c7c-a2a5-b9a636d2afec")
+	)
 	(symbol
-		(lib_id "Device:D")
-		(at 730.25 113.03 270)
+		(lib_id "power:GND")
+		(at 551.18 245.11 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3331,31 +3433,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "12a9d8cd-8920-41f2-9b73-265f4ac24725")
-		(property "Reference" "D1"
-			(at 732.79 111.7599 90)
+		(uuid "05eb0eff-12eb-4421-af1b-ba18ff76ba5d")
+		(property "Reference" "#PWR019"
+			(at 544.83 245.11 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "D"
-			(at 732.79 114.2999 90)
+		(property "Value" "GND"
+			(at 547.37 245.1101 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 730.25 113.03 0)
+		(property "Footprint" ""
+			(at 551.18 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3366,7 +3468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 730.25 113.03 0)
+			(at 551.18 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3376,30 +3478,8 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
-			(at 730.25 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 730.25 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 730.25 113.03 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 551.18 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3410,23 +3490,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "a399ecc2-7871-48c4-8773-3d670f409991")
-		)
-		(pin "2"
-			(uuid "7f946c82-b20e-4099-9437-7814dadc2e22")
+			(uuid "6ebeb095-c74c-4011-abb2-9c169165e940")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "D1")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 614.68 160.02 180)
+		(lib_id "Device:R")
+		(at 629.92 240.03 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3435,9 +3512,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2ad91df3-2803-456e-9175-39797f78e460")
-		(property "Reference" "SW1"
-			(at 614.68 167.64 0)
+		(uuid "06ee9dcf-af65-440a-8dce-a18e20731d64")
+		(property "Reference" "R5"
+			(at 629.92 233.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3446,8 +3523,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 614.68 165.1 0)
+		(property "Value" "1k"
+			(at 629.92 236.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3456,8 +3533,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 614.68 165.1 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+			(at 629.92 241.808 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3468,7 +3545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 614.68 165.1 0)
+			(at 629.92 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3478,8 +3555,8 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 614.68 160.02 0)
+		(property "Description" "Resistor"
+			(at 629.92 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3488,105 +3565,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "d8fd21ea-7353-4116-a0f3-ad61cf5a657a")
 		)
 		(pin "2"
-			(uuid "64c53f22-42b4-4a3f-a643-4f52a0c3864e")
+			(uuid "68187e63-211b-4822-8964-2205eec55ed5")
+		)
+		(pin "1"
+			(uuid "88740232-f22f-417d-ba42-4bf6a396b935")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor:DHT11")
-		(at 684.53 157.48 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2af34705-beb8-4533-9708-092c505b6a7b")
-		(property "Reference" "U4"
-			(at 690.88 158.7501 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "DHT11"
-			(at 690.88 156.2101 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
-			(at 684.53 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf"
-			(at 680.72 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "3.3V to 5.5V, temperature and humidity module, DHT11"
-			(at 684.53 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "df9ea8ab-d2f6-4746-a027-c912f0a2557e")
-		)
-		(pin "4"
-			(uuid "81da67d7-9486-4c9e-88f6-7a99f3bbf9b3")
-		)
-		(pin "1"
-			(uuid "cc4ee288-9cfa-40f3-a80b-c46dd0f1a72a")
-		)
-		(pin "2"
-			(uuid "00694c25-b9e5-42db-8340-13772ddbaea2")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "U4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3594,7 +3583,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 614.68 134.62 180)
+		(at 556.26 229.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3602,10 +3591,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bd58b14-6ce7-4b07-8b54-943bbda4b85a")
+		(uuid "1c46ff5b-f9df-4148-9fd2-808ce32d2dbc")
 		(property "Reference" "SW3"
-			(at 614.68 142.24 0)
+			(at 556.26 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3615,7 +3603,8 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 614.68 139.7 0)
+			(at 556.26 234.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3625,7 +3614,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 614.68 139.7 0)
+			(at 556.26 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3636,7 +3625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 614.68 139.7 0)
+			(at 556.26 234.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3647,7 +3636,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 614.68 134.62 0)
+			(at 556.26 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3658,10 +3647,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b0aabe4b-c1e5-44c5-a080-6d3eb33be339")
+			(uuid "2508db0f-ea25-4fe1-87e3-b85603ba124e")
 		)
 		(pin "2"
-			(uuid "3aeac705-41d6-456c-85d6-b29b5ece9f5a")
+			(uuid "876fb63f-1c05-444a-ae62-644685a96dec")
 		)
 		(instances
 			(project "Super Starbie"
@@ -3673,88 +3662,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 614.68 121.92 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2df252f0-4fb1-4353-b3cb-abc996af8146")
-		(property "Reference" "SW4"
-			(at 614.68 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 614.68 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 614.68 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 614.68 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 614.68 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ccaf8e8e-3f31-493b-89c1-b2cf16cb9ba0")
-		)
-		(pin "2"
-			(uuid "06dfbd4a-4e20-47a6-b771-dc199e0f2b24")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 683.26 118.11 90)
+		(at 642.62 205.74 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3763,9 +3673,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3c3c130c-6f97-46a4-9c56-19c62b1a4526")
-		(property "Reference" "#PWR010"
-			(at 689.61 118.11 0)
+		(uuid "2123f79f-8ed9-4a47-920f-82103f2e8383")
+		(property "Reference" "#PWR026"
+			(at 648.97 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3776,18 +3686,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 687.07 118.1099 90)
+			(at 647.7 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 683.26 118.11 0)
+			(at 642.62 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3798,7 +3707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 683.26 118.11 0)
+			(at 642.62 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +3718,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 683.26 118.11 0)
+			(at 642.62 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1458ecde-88a0-4122-8c32-5a4c66a120cc")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 549.91 198.12 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c3c130c-6f97-46a4-9c56-19c62b1a4526")
+		(property "Reference" "#PWR010"
+			(at 543.56 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 549.91 195.834 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 549.91 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 549.91 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 549.91 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3833,7 +3819,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 679.45 115.57 270)
+		(at 551.18 200.66 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3841,10 +3827,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "41434262-d80c-4e28-b7a9-aa4ba33f140d")
 		(property "Reference" "#PWR09"
-			(at 675.64 115.57 0)
+			(at 554.99 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3855,18 +3840,17 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 683.26 115.5699 90)
+			(at 545.338 200.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 679.45 115.57 0)
+			(at 551.18 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3877,7 +3861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 679.45 115.57 0)
+			(at 551.18 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3888,7 +3872,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 679.45 115.57 0)
+			(at 551.18 200.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3911,247 +3895,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 614.68 147.32 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47e8fc53-734e-4870-a78b-08e4a8cd0178")
-		(property "Reference" "SW2"
-			(at 614.68 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 614.68 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 614.68 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 614.68 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 614.68 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7c32f0a-09fe-4c2f-8533-11295ae57a86")
-		)
-		(pin "2"
-			(uuid "a72950d5-6b57-48c5-95c4-4c8f30543c9d")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 680.72 104.14 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49a7f053-1fa9-4777-b4c1-27e94311fe15")
-		(property "Reference" "#PWR05"
-			(at 687.07 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 685.8 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 680.72 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 680.72 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 680.72 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8f911bb6-7b3b-4662-a224-4389bd05f153")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 614.68 109.22 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5361bcc9-3189-4c76-8d23-a0d704267b3e")
-		(property "Reference" "SW5"
-			(at 614.68 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 614.68 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 614.68 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 614.68 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 614.68 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8fd97c10-a367-40ac-b740-5ed555be8885")
-		)
-		(pin "2"
-			(uuid "325e4374-cdd4-4f68-80be-cf15734810eb")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 684.53 165.1 270)
+		(at 683.26 226.06 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4160,9 +3905,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "54738bd8-5973-4ef9-b639-4a079c19f5d4")
+		(uuid "60548d22-911f-467d-923d-6c371c716037")
 		(property "Reference" "#PWR04"
-			(at 680.72 165.1 0)
+			(at 683.26 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4173,18 +3918,17 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 688.34 165.0999 90)
+			(at 683.26 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 684.53 165.1 0)
+			(at 683.26 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4195,7 +3939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 684.53 165.1 0)
+			(at 683.26 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4206,7 +3950,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 684.53 165.1 0)
+			(at 683.26 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4217,7 +3961,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c29f4d57-17ea-43cd-b388-59b761f95374")
+			(uuid "9f7c5f2d-1d73-4972-b800-1d5e381d28d8")
 		)
 		(instances
 			(project "Super Starbie"
@@ -4229,8 +3973,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 702.31 137.16 0)
+		(lib_id "Transistor_BJT:2N2219")
+		(at 638.81 240.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4239,9 +3983,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5dd448f1-3cf5-421a-8140-2dff32ede92e")
-		(property "Reference" "Q2"
-			(at 708.66 135.8899 0)
+		(uuid "608d2cd0-0751-48a4-b2b3-96fe1a084c3a")
+		(property "Reference" "Q1"
+			(at 643.89 238.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4251,8 +3995,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
-			(at 708.66 138.4299 0)
+		(property "Value" "2N2222"
+			(at 643.89 241.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4262,8 +4006,33 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 707.39 134.62 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 643.89 241.935 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF"
+			(at 638.81 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "800mA Ic, 50V Vce, NPN Transistor, TO-39"
+			(at 638.81 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4273,8 +4042,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 702.31 137.16 0)
+		(property "Sim.Device" "NPN"
+			(at 638.81 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4284,8 +4053,8 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 702.31 137.16 0)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 638.81 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4296,18 +4065,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "3553b922-1d69-49fb-aefa-2c2d20c53b41")
-		)
-		(pin "1"
-			(uuid "7795a77d-b5cf-4722-a838-816803eaf226")
+			(uuid "931fe5a8-70b1-40c7-993e-ab3551f67da8")
 		)
 		(pin "2"
-			(uuid "d86d77fb-110b-48dd-a8d3-1581199a2f11")
+			(uuid "dd8bd324-09c9-4c80-a516-26fa5eaeb61a")
+		)
+		(pin "1"
+			(uuid "b71ddd37-8a9f-4fb2-9397-63b9207c2180")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4315,7 +4084,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
-		(at 674.37 123.19 0)
+		(at 558.8 207.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4323,10 +4092,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "624299df-b021-4289-a06d-c0589445a1e7")
 		(property "Reference" "J4"
-			(at 675.005 110.49 0)
+			(at 558.8 212.344 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4336,7 +4105,7 @@
 			)
 		)
 		(property "Value" "MPU6050"
-			(at 675.005 113.03 0)
+			(at 559.054 209.804 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4346,7 +4115,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 674.37 123.19 0)
+			(at 558.8 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4357,7 +4126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 674.37 123.19 0)
+			(at 558.8 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4368,7 +4137,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 674.37 123.19 0)
+			(at 558.8 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4412,8 +4181,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 704.85 148.59 0)
+		(lib_id "Device:D")
+		(at 657.86 226.06 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4422,30 +4191,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6dd6702f-1eda-46d8-9156-d5dfc3845c83")
-		(property "Reference" "#PWR013"
-			(at 704.85 154.94 0)
-			(hide yes)
+		(uuid "62dded5a-af86-499f-917d-5bfb458fcc49")
+		(property "Reference" "D2"
+			(at 660.4 224.7899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 704.85 153.67 0)
+		(property "Value" "D"
+			(at 660.4 227.3299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 704.85 148.59 0)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 657.86 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4456,7 +4226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 704.85 148.59 0)
+			(at 657.86 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4466,8 +4236,30 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 704.85 148.59 0)
+		(property "Description" "Diode"
+			(at 657.86 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 657.86 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 657.86 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4478,12 +4270,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "74a87eba-fb6a-467f-830a-681129834558")
+			(uuid "fa582802-7af2-4beb-b828-e8ebe927128e")
+		)
+		(pin "2"
+			(uuid "15597b8e-7a90-4c3c-a7d0-5b452f5e635c")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR013")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4491,7 +4286,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 609.6 134.62 270)
+		(at 551.18 214.63 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4500,9 +4295,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "73c906a8-3fe6-4eed-a741-576d24386df3")
-		(property "Reference" "#PWR08"
-			(at 603.25 134.62 0)
+		(uuid "6ca03a2e-79fc-498b-ac7f-6fd412283223")
+		(property "Reference" "#PWR020"
+			(at 544.83 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4513,7 +4308,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 605.79 134.6201 90)
+			(at 547.37 214.6301 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4524,7 +4319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 609.6 134.62 0)
+			(at 551.18 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4535,7 +4330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 609.6 134.62 0)
+			(at 551.18 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4546,7 +4341,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 609.6 134.62 0)
+			(at 551.18 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4557,20 +4352,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "8f025d42-a0b5-4984-95bd-29c06994ab61")
+			(uuid "561dd09c-bde3-464f-aa6a-5c61c001d334")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR08")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 661.67 157.48 270)
+		(lib_id "power:GND")
+		(at 551.18 237.49 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4578,9 +4373,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8415496b-ec40-4b6b-a200-a3543be03a71")
-		(property "Reference" "#PWR03"
-			(at 657.86 157.48 0)
+		(fields_autoplaced yes)
+		(uuid "721bf0e8-678c-447b-b966-3b5b821c5305")
+		(property "Reference" "#PWR018"
+			(at 544.83 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4590,19 +4386,19 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 664.972 157.226 90)
+		(property "Value" "GND"
+			(at 547.37 237.4901 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 661.67 157.48 0)
+			(at 551.18 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4613,7 +4409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 661.67 157.48 0)
+			(at 551.18 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4623,8 +4419,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 661.67 157.48 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 551.18 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,20 +4431,344 @@
 			)
 		)
 		(pin "1"
-			(uuid "bbbbcf8f-a7d9-4f18-9023-abc8219be699")
+			(uuid "61b5d346-3b94-4d3f-84a1-5f9e79333fe1")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR03")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 704.85 111.76 0)
+		(lib_id "power:GND")
+		(at 641.35 245.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c5fd8a1-db4e-4ed6-a531-0df4e8e982c9")
+		(property "Reference" "#PWR025"
+			(at 641.35 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 637.032 246.888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 641.35 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 641.35 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 641.35 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c42c8902-da7b-457f-a044-288ebe72c76c")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 556.26 214.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "804f07fd-65fb-4420-bb26-8038c2ac1fcd")
+		(property "Reference" "SW5"
+			(at 556.26 219.202 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 556.26 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 556.26 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 556.26 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 556.26 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f2a4a295-8948-4a9e-ade3-68711de7a846")
+		)
+		(pin "2"
+			(uuid "fbfd9a0d-2061-49d7-8131-b998e9fd4dc2")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 636.27 203.2 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "908164de-1f01-4383-86f4-0e5fe3168b15")
+		(property "Reference" "J5"
+			(at 634.238 202.692 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OLED_SD1106"
+			(at 631.698 202.692 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Imported Parts:Display_128x64_096_I2C"
+			(at 636.27 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 636.27 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 636.27 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "07f788c8-d5b0-47f1-b789-ac902dbae6fb")
+		)
+		(pin "4"
+			(uuid "2f574dde-aa24-4c42-a041-393b7727202f")
+		)
+		(pin "2"
+			(uuid "8078a0e5-fef6-4987-86e3-64bcc7334aa9")
+		)
+		(pin "1"
+			(uuid "e3d7e7c2-beb2-45c1-9bb1-412c3fa7ce0f")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 556.26 237.49 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91db13e9-bf3c-46cb-8ba2-bca54225f555")
+		(property "Reference" "SW2"
+			(at 556.26 242.062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 556.26 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 556.26 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 556.26 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 556.26 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e77da468-2213-4727-8ef0-e78df1ca48cc")
+		)
+		(pin "2"
+			(uuid "9495f20f-fb12-4e72-aa1d-2fc21615cf2c")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 551.18 229.87 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4657,9 +4777,88 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "85a7fe5e-5a62-4d5e-92cb-9860477ea32e")
-		(property "Reference" "M2"
-			(at 709.93 113.0299 0)
+		(uuid "930f3ff3-12d3-47da-aa19-5fc99cc26c76")
+		(property "Reference" "#PWR017"
+			(at 544.83 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 547.37 229.8701 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 551.18 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 551.18 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 551.18 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a66c8c05-b54c-40fd-8ea6-31fa9df89f8f")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_DC")
+		(at 641.35 224.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94b1149e-6e5e-4c2b-b18a-1f4b637999ff")
+		(property "Reference" "M3"
+			(at 646.43 226.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4670,7 +4869,7 @@
 			)
 		)
 		(property "Value" "Motor_DC"
-			(at 709.93 115.5699 0)
+			(at 646.43 228.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4681,7 +4880,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 704.85 114.046 0)
+			(at 641.35 227.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4692,7 +4891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 704.85 114.046 0)
+			(at 641.35 227.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4703,7 +4902,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 704.85 111.76 0)
+			(at 641.35 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4714,23 +4913,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "8f67b6ca-b2ef-41f0-9687-ca79e570c3a7")
+			(uuid "55f0460c-dc50-40fe-9470-53bdec57b4b6")
 		)
 		(pin "1"
-			(uuid "b5f737a1-da6b-4967-934e-3bf3090a29f3")
+			(uuid "de074a76-494d-4cd2-988f-0b04b05d79fb")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "M2")
+					(reference "M3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 609.6 121.92 270)
+		(lib_id "Sensor:DHT11")
+		(at 683.26 218.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4738,21 +4937,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "925fd9eb-eaee-44a4-858c-b1aadaaf267a")
-		(property "Reference" "#PWR06"
-			(at 603.25 121.92 0)
+		(uuid "96e3170c-e91f-450e-855b-2416c696b03d")
+		(property "Reference" "U4"
+			(at 689.61 219.7101 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 605.79 121.9201 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4762,8 +4950,19 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 609.6 121.92 0)
+		(property "Value" "DHT11"
+			(at 689.356 218.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
+			(at 683.26 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4773,8 +4972,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 609.6 121.92 0)
+		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf"
+			(at 679.45 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4784,8 +4983,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 609.6 121.92 0)
+		(property "Description" "3.3V to 5.5V, temperature and humidity module, DHT11"
+			(at 683.26 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,14 +4993,23 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "3"
+			(uuid "53eb2f0a-0872-4898-92ae-4b13032372c2")
+		)
+		(pin "4"
+			(uuid "69853f25-17bd-4786-b087-2b4797080fbc")
 		)
 		(pin "1"
-			(uuid "963440b3-6e8e-4499-bcb6-deba9754ced3")
+			(uuid "7d460cec-a4a8-438e-b9df-26d48a2673fe")
+		)
+		(pin "2"
+			(uuid "9def2979-62f4-449b-9611-ca3dfae44ec9")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR06")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -4809,8 +5017,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 685.8 101.6 270)
-		(mirror x)
+		(at 609.6 242.57 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4818,10 +5025,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a7d8c6-10e5-4f87-8779-57a5f8e6a469")
-		(property "Reference" "#PWR07"
-			(at 681.99 101.6 0)
+		(uuid "a214c9ad-2736-4998-b619-c029ba72480f")
+		(property "Reference" "#PWR023"
+			(at 609.6 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4832,17 +5038,18 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 690.88 101.6 0)
+			(at 612.14 246.634 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 685.8 101.6 0)
+			(at 609.6 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4853,7 +5060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 685.8 101.6 0)
+			(at 609.6 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4864,7 +5071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 685.8 101.6 0)
+			(at 609.6 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4875,12 +5082,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "95bf367e-ae6a-4724-825b-992e3c5c31c4")
+			(uuid "c89dbf58-e1ac-4ef7-95e1-23f56f17a7b4")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR07")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4888,7 +5095,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 609.6 109.22 270)
+		(at 683.26 210.82 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4896,89 +5103,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d02bb12-66b0-4c88-82ad-589f85cd5619")
-		(property "Reference" "#PWR012"
-			(at 603.25 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 605.79 109.2201 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 609.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 609.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 609.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "166be180-b5b3-4eb2-a43a-569cc9008111")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 684.53 149.86 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ab759458-16ad-480f-abac-353af40a2703")
 		(property "Reference" "#PWR02"
-			(at 690.88 149.86 0)
+			(at 683.26 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4989,7 +5116,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 688.34 149.8599 90)
+			(at 683.26 206.502 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5000,7 +5127,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 684.53 149.86 0)
+			(at 683.26 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5011,7 +5138,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 684.53 149.86 0)
+			(at 683.26 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5022,7 +5149,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 684.53 149.86 0)
+			(at 683.26 210.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5045,256 +5172,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 674.37 101.6 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b8044afb-7ac8-4364-9bff-5d0717f19716")
-		(property "Reference" "J3"
-			(at 672.338 101.092 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OLED_SH1107"
-			(at 669.798 101.092 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Imported Parts:Display_128x64_096_I2C"
-			(at 674.37 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 674.37 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 674.37 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7ed0f600-c899-424a-aedf-18f57dc1f88c")
-		)
-		(pin "4"
-			(uuid "cecc30a7-b135-42da-8fd5-8a27cd154213")
-		)
-		(pin "2"
-			(uuid "af142449-fb57-47ec-8f16-4c8213156b97")
-		)
-		(pin "1"
-			(uuid "bf69d8f6-c0c0-47bd-8996-df5d8c444b2b")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "New_Library_0:esp32_38_pins-custom_library")
-		(at 638.81 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bc0b547a-3e18-4b73-be1b-da6daa705c92")
-		(property "Reference" "U2"
-			(at 647.954 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "esp32_Wroom_32S_30_Pins"
-			(at 648.208 117.348 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Calibration_Scale:THE NEW FOOTPRINTER"
-			(at 647.7 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 638.81 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 638.81 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "33"
-			(uuid "3746bc9b-ee39-41e5-8ff8-1c950d7b554c")
-		)
-		(pin "9"
-			(uuid "cbc01127-6c95-4cd8-9d27-6c99c21da3ff")
-		)
-		(pin ""
-			(uuid "ef6d974b-2eab-4a93-8f5e-1c79b985e5b9")
-		)
-		(pin "31"
-			(uuid "d772852d-f1ad-445c-94e8-db78edc6a7ff")
-		)
-		(pin "11"
-			(uuid "caa277ec-d89a-4687-a659-a48ea6844297")
-		)
-		(pin "24"
-			(uuid "dc87bf76-bb7a-497d-a9c0-fb352c545c3e")
-		)
-		(pin "14"
-			(uuid "5a56da4a-acd1-480f-bbdb-7bbb7a0d91e8")
-		)
-		(pin "3"
-			(uuid "35837796-63a5-4178-a4d5-9012aaf0eb14")
-		)
-		(pin "7"
-			(uuid "a259716d-0850-4fa9-ac6c-5616938c1867")
-		)
-		(pin "23"
-			(uuid "74e18f64-3da8-4e76-8349-b9017548095f")
-		)
-		(pin "+3.3V"
-			(uuid "2b10643a-8d16-4784-af87-793129b36929")
-		)
-		(pin "1"
-			(uuid "3a26f1e3-26ff-47ce-9795-4d1d78c748cf")
-		)
-		(pin "6"
-			(uuid "9ac2a360-d2c4-47cc-8728-e4564635f0c4")
-		)
-		(pin "28"
-			(uuid "60434366-1adc-464d-8db1-5f94c7e50224")
-		)
-		(pin "12"
-			(uuid "e50d3c5c-4852-4f5c-9be5-a7b854b5125b")
-		)
-		(pin "10"
-			(uuid "4d914f2b-cb61-4773-a934-82809c3a8dd1")
-		)
-		(pin "30"
-			(uuid "eeba7ade-9344-4330-89e6-0b9b309a2411")
-		)
-		(pin "4"
-			(uuid "ebd7b74d-cc93-4b75-8893-315fefcc4a53")
-		)
-		(pin "27"
-			(uuid "627eb62b-a384-41a4-a519-a6ce88f48df7")
-		)
-		(pin "29"
-			(uuid "63a95338-f66a-43a6-87e9-1d48d332e103")
-		)
-		(pin "16"
-			(uuid "b97caa1f-7464-4b8d-b3d3-7e4750035124")
-		)
-		(pin "26"
-			(uuid "44dd3039-7a1d-4547-8e15-89b0339ecd10")
-		)
-		(pin "13"
-			(uuid "cf10925b-426c-44bb-8f82-ccccec1a154e")
-		)
-		(pin "5"
-			(uuid "212d6a4e-7742-4d17-8870-80df1a0b327e")
-		)
-		(pin "8"
-			(uuid "69c7a324-e428-42bc-980d-e9f7127130ee")
-		)
-		(pin "36"
-			(uuid "81af4c04-683b-406d-8a79-b69bba3469f8")
-		)
-		(pin "38"
-			(uuid "851ca76a-d211-4e96-b29f-6c730c68ca4c")
-		)
-		(pin "37"
-			(uuid "a6d2f5e6-da42-4f44-9c69-b46c0953aca2")
-		)
-		(pin "35"
-			(uuid "94a4ce6f-a935-4541-8085-e7c08172eb11")
-		)
-		(pin "34"
-			(uuid "c0477aa7-15d6-47d1-be0b-931f0fb59801")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 697.23 144.78 0)
+		(lib_id "power:GND")
+		(at 551.18 222.25 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5303,31 +5182,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bd044cdd-bd3d-443a-918c-3899d216fa80")
-		(property "Reference" "R4"
-			(at 699.77 143.5099 0)
+		(uuid "b11fff10-cf88-4700-afdf-1761ce7be8b5")
+		(property "Reference" "#PWR016"
+			(at 544.83 222.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 699.77 146.0499 0)
+		(property "Value" "GND"
+			(at 547.37 222.2501 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 695.452 144.78 90)
+		(property "Footprint" ""
+			(at 551.18 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5338,7 +5217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 697.23 144.78 0)
+			(at 551.18 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5348,8 +5227,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 697.23 144.78 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 551.18 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,17 +5237,94 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "e95835b2-323e-4b7e-a757-9512359dda5f")
 		)
 		(pin "1"
-			(uuid "e95a5605-1585-4f36-bacb-36498158c1bf")
+			(uuid "10ca59c9-0bc3-49ec-9349-e46093237cf8")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "R4")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 556.26 245.11 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b546cca5-de4e-4f99-9f06-1c19346b9496")
+		(property "Reference" "SW1"
+			(at 556.26 249.936 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 556.26 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 556.26 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 556.26 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 556.26 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1c6bd94-9381-4b1d-b31a-3768845228b0")
+		)
+		(pin "2"
+			(uuid "f7ac7590-8098-46c2-ab7e-2660198d4ac0")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -5376,7 +5332,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 675.64 165.1 90)
+		(at 675.64 222.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5386,7 +5342,8 @@
 		(dnp no)
 		(uuid "bf26dee2-39c1-444a-96fb-2cafe1b9fe69")
 		(property "Reference" "R1"
-			(at 675.894 168.91 90)
+			(at 678.434 222.758 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5396,7 +5353,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 675.894 167.132 90)
+			(at 672.846 222.504 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5406,7 +5363,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 675.64 166.878 90)
+			(at 677.418 222.25 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5417,7 +5374,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 675.64 165.1 0)
+			(at 675.64 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5428,7 +5385,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 675.64 165.1 0)
+			(at 675.64 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5454,8 +5411,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 609.6 147.32 270)
+		(lib_id "New_Library_0:esp32_38_pins-custom_library")
+		(at 586.74 209.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5463,10 +5420,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c60051ae-c96b-427e-bb5c-8d39e87f29b8")
-		(property "Reference" "#PWR014"
-			(at 603.25 147.32 0)
+		(uuid "c47dcda6-9209-4522-b5a8-d4cd28c432a2")
+		(property "Reference" "U3"
+			(at 595.884 197.104 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5476,19 +5432,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 605.79 147.3201 90)
+		(property "Value" "esp32_Wroom_32S_30_Pins"
+			(at 596.138 199.898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 609.6 147.32 0)
+		(property "Footprint" "Calibration_Scale:THE NEW FOOTPRINTER"
+			(at 595.63 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5499,7 +5454,17 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 609.6 147.32 0)
+			(at 586.74 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 586.74 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5509,182 +5474,100 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 609.6 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "33"
+			(uuid "6956cbe3-7acb-4033-89ee-4526bf3431f2")
+		)
+		(pin "9"
+			(uuid "0518f66b-b1f2-48aa-931d-3da392c41cf4")
+		)
+		(pin ""
+			(uuid "0f32169e-28dd-4371-915c-a6689ab2686d")
+		)
+		(pin "31"
+			(uuid "05a6bba2-4344-462d-93d4-cde97a5ce2ae")
+		)
+		(pin "11"
+			(uuid "c73aa1e9-4563-41cc-ab6c-afff8d3fff53")
+		)
+		(pin "24"
+			(uuid "ed2db735-21ed-4a1c-be75-55c003e06ad5")
+		)
+		(pin "14"
+			(uuid "7ac72da0-3193-42ae-a115-8813864f796f")
+		)
+		(pin "3"
+			(uuid "c6b83f20-d78d-497c-8bb1-d9cff467d4b3")
+		)
+		(pin "7"
+			(uuid "83789e07-ce15-47e0-ba09-18a8c719f050")
+		)
+		(pin "23"
+			(uuid "99dd262f-f566-4809-8796-cdc687e54799")
+		)
+		(pin "+3.3V"
+			(uuid "df0d7d07-9c48-4cc7-bbab-d789deea0c1c")
 		)
 		(pin "1"
-			(uuid "26ecd5ff-9dda-49f7-98e3-414fd48916e9")
+			(uuid "0b234e30-3fdd-437d-a7d4-e01c2c9e865d")
+		)
+		(pin "6"
+			(uuid "8a313764-85dd-43d0-aeac-3f319e1b49e9")
+		)
+		(pin "28"
+			(uuid "ce7eb561-0024-4a2d-b309-413b950fc307")
+		)
+		(pin "12"
+			(uuid "1270550e-47b0-4238-a7f7-8a7f30b64e04")
+		)
+		(pin "10"
+			(uuid "f1defab8-b918-4f0a-a1ca-928a3bf932a9")
+		)
+		(pin "30"
+			(uuid "aff179e0-005c-4f07-9c1a-0d714d038ba3")
+		)
+		(pin "4"
+			(uuid "760096cc-b0f4-4b81-8920-7944dbe5b5e7")
+		)
+		(pin "27"
+			(uuid "66674d61-d70e-4ae8-bcf0-dd17f46f6658")
+		)
+		(pin "29"
+			(uuid "77f2ad3b-1fe5-488f-b512-01a3e3a32b89")
+		)
+		(pin "16"
+			(uuid "68777ba8-8ad8-4d05-a105-698925eb5f9e")
+		)
+		(pin "26"
+			(uuid "e9726583-5e7b-42fb-a873-14984f78b7eb")
+		)
+		(pin "13"
+			(uuid "1360a484-561a-4bd3-96a3-8892fff756c8")
+		)
+		(pin "5"
+			(uuid "6357073e-0546-499b-a1bc-29a8f414423d")
+		)
+		(pin "8"
+			(uuid "27279970-82fa-4eb0-a954-91fc516e5d55")
+		)
+		(pin "36"
+			(uuid "2fd3a928-6423-4a98-930e-721624900310")
+		)
+		(pin "38"
+			(uuid "f43c9163-b9ed-4af7-80d5-e9430999fb73")
+		)
+		(pin "37"
+			(uuid "e87f87f4-1472-468b-af95-9663c503b0bb")
+		)
+		(pin "35"
+			(uuid "e4c53d51-d09c-40bd-8210-4179f85125a8")
+		)
+		(pin "34"
+			(uuid "a2d87a92-aeea-45fe-9a5e-16b159e2607e")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 633.73 154.94 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dcc99d83-414a-44b9-b4fe-9811f154d016")
-		(property "Reference" "#PWR01"
-			(at 627.38 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 629.92 154.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 633.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 633.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 633.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6dca9d11-ad6b-4b23-99a1-424c1bf2f201")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 609.6 160.02 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e844fd4b-3830-4fe4-929f-490df2bf1685")
-		(property "Reference" "#PWR015"
-			(at 603.25 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 605.79 160.0201 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 609.6 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 609.6 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 609.6 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "951ecef2-c369-41ec-b0b7-bc98dbb08d94")
-		)
-		(instances
-			(project "Super Starbie"
-				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR015")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -5692,7 +5575,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 704.85 106.68 0)
+		(at 641.35 219.71 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5701,10 +5584,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd0306e3-eb85-49d9-ba30-ed16a2fb7292")
-		(property "Reference" "#PWR011"
-			(at 704.85 110.49 0)
+		(uuid "d13f5235-7e26-47bc-b4c3-19e92f339f47")
+		(property "Reference" "#PWR024"
+			(at 641.35 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5715,7 +5597,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 704.85 101.6 0)
+			(at 636.016 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5725,7 +5607,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 704.85 106.68 0)
+			(at 641.35 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5736,7 +5618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 704.85 106.68 0)
+			(at 641.35 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5747,7 +5629,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 704.85 106.68 0)
+			(at 641.35 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5758,12 +5640,248 @@
 			)
 		)
 		(pin "1"
-			(uuid "0bd41bf1-ef1b-4679-b63e-9791df13c6a3")
+			(uuid "97d0dac4-b84a-421d-96c7-9cc12ee6c231")
 		)
 		(instances
 			(project "Super Starbie"
 				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
-					(reference "#PWR011")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 647.7 203.2 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d455561b-25a7-422d-bbc4-a0837bb8ee10")
+		(property "Reference" "#PWR027"
+			(at 643.89 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 652.78 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 647.7 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 647.7 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 647.7 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bef6b47-baa8-4aed-9c64-d0658a8b65bf")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 581.66 237.49 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f761a0dc-7238-438e-8943-d5182b894a66")
+		(property "Reference" "#PWR022"
+			(at 575.31 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 576.326 237.49 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 581.66 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 581.66 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 581.66 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c0b0b3d-2a66-4ca0-bd6a-b6a4e6f7ab3c")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 556.26 222.25 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f93e9cdc-ca2c-4436-8e4a-eb9255f76881")
+		(property "Reference" "SW4"
+			(at 556.26 226.822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 556.26 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 556.26 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 556.26 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 556.26 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "632b034f-04dc-4c19-8bc3-b685f95d7cbe")
+		)
+		(pin "2"
+			(uuid "a75233dc-353b-49b9-99b1-041caa4e7fc0")
+		)
+		(instances
+			(project "Super Starbie"
+				(path "/68be8684-c62e-4513-94ab-4215416c2db7"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
